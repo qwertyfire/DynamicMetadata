@@ -14,7 +14,7 @@ const ABI = [
 ]
 
 app.get('/', async (req, res) => {
-    res.send("Hello World Deploy Again - This is a Shiboshis Metadata API")
+    res.send("This is a Shiboshis Metadata API")
 })
 
 app.get('/:boshinumber', async (req, res) => {
