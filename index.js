@@ -1,8 +1,6 @@
 import fetch from 'node-fetch';
 import express from 'express';
 import { ethers } from "ethers";
-// const app = require('express')();
-// const { ethers } = require("ethers");
 
 const app = express();
 let PORT = process.env.PORT || 80;
@@ -16,7 +14,7 @@ const ABI = [
 ]
 
 app.get('/', async (req, res) => {
-    res.send("Hello World - This is a Shiboshis Metadata API")
+    res.send("Hello World Deploy Again - This is a Shiboshis Metadata API")
 })
 
 app.get('/:boshinumber', async (req, res) => {
@@ -48,5 +46,4 @@ app.get('/:boshinumber', async (req, res) => {
     }
 })
 
-// app.listen()
 app.listen(PORT, () => console.log(`it's alive on http://localhost:${PORT}`))
